@@ -1,0 +1,197 @@
+<%- include('../partials/head') %>
+<style>
+    .details-container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    .details-hero img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .details-body {
+        padding: 30px 35px;
+    }
+    .details-body h1 {
+        font-size: 2rem;
+        margin: 0 0 8px;
+        color: #222;
+    }
+    .details-location {
+        color: #777;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .details-rating {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+    .star { color: #ff9800; font-size: 1.2rem; }
+    .star.empty { color: #ccc; }
+    .rating-number { font-weight: bold; font-size: 1rem; color: #333; }
+    .details-price {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: rgb(30, 115, 134);
+        margin-bottom: 25px;
+    }
+    .details-divider { border: none; border-top: 1px solid #e0e0e0; margin: 20px 0; }
+    .details-section h3 { font-size: 1.1rem; color: #333; margin-bottom: 10px; }
+    .details-section p { color: #555; line-height: 1.7; font-size: 0.95rem; }
+    .amenities-list {
+        display: flex; flex-wrap: wrap; gap: 10px;
+        list-style: none; padding: 0; margin: 10px 0 0;
+    }
+    .amenities-list li {
+        background: #f3ece0; padding: 8px 16px;
+        border-radius: 20px; font-size: 0.9rem; color: #444;
+    }
+    .details-info-grid {
+        display: grid; grid-template-columns: 1fr 1fr;
+        gap: 15px; margin-top: 10px;
+    }
+    .info-item {
+        background: #f9f9f9; padding: 14px 18px;
+        border-radius: 8px; border: 1px solid #eee;
+    }
+    .info-item span.label {
+        display: block; font-size: 0.8rem; color: #888;
+        text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;
+    }
+    .info-item span.value { font-size: 1rem; font-weight: 600; color: #333; }
+    .details-actions { display: flex; gap: 12px; margin-top: 25px; }
+    .btn-book {
+        background-color: rgb(66, 158, 69); color: white;
+        padding: 12px 28px; border: none; border-radius: 6px;
+        font-size: 15px; font-weight: 600; cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-decoration: none;
+    }
+    .btn-book:hover { background-color: rgb(50, 130, 53); transform: translateY(-1px); }
+    .btn-favourite {
+        background-color: rgb(30, 115, 134); color: white;
+        padding: 12px 28px; border: none; border-radius: 6px;
+        font-size: 15px; font-weight: 600; cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-decoration: none;
+    }
+    .btn-favourite:hover { background-color: rgb(22, 90, 105); transform: translateY(-1px); }
+    .btn-back {
+        background-color: #333; color: white;
+        padding: 12px 28px; border: none; border-radius: 6px;
+        font-size: 15px; font-weight: 600; cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-decoration: none;
+    }
+    .btn-back:hover { background-color: #ff9800; transform: translateY(-1px); }
+    @media (max-width: 600px) {
+        .details-hero img { height: 250px; }
+        .details-body { padding: 20px; }
+        .details-info-grid { grid-template-columns: 1fr; }
+        .details-actions { flex-direction: column; }
+    }
+</style>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+
+    <main>
+        <% if (locals.home) { %>
+        <div class="details-container">
+            <div class="details-hero">
+                <img src="<%= home.photoUrl %>" alt="<%= home.HouseName %>" />
+            </div>
+            <div class="details-body">
+                <h1><%= home.HouseName %></h1>
+                <p class="details-location">📍 <%= home.location %></p>
+
+                <div class="details-rating">
+                    <% for (let i = 1; i <= 5; i++) { %>
+                        <span class="star <%= i <= Number(home.rating) ? '' : 'empty' %>">★</span>
+                    <% } %>
+                    <span class="rating-number"><%= home.rating %> / 5</span>
+                </div>
+
+                <p class="details-price">₹ <%= Number(home.price).toLocaleString('en-IN') %> / month</p>
+
+                <hr class="details-divider">
+
+                <div class="details-section">
+                    <h3>About this Home</h3>
+                    <p>
+                        Welcome to <strong><%= home.HouseName %></strong>, a beautiful property located in the heart of
+                        <strong><%= home.location %></strong>. This well-maintained home offers a comfortable and modern living
+                        experience. Whether you're looking for a short stay or a long-term rental, this property is the
+                        perfect choice for families, professionals, and travellers alike.
+                    </p>
+                </div>
+
+                <hr class="details-divider">
+
+                <div class="details-section">
+                    <h3>Property Details</h3>
+                    <div class="details-info-grid">
+                        <div class="info-item">
+                            <span class="label">House ID</span>
+                            <span class="value">#<%= home.id %></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Type</span>
+                            <span class="value">Residential</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Bedrooms</span>
+                            <span class="value">3 BHK</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Availability</span>
+                            <span class="value" style="color: rgb(66, 158, 69);">Available Now</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="details-divider">
+
+                <div class="details-section">
+                    <h3>Amenities</h3>
+                    <ul class="amenities-list">
+                        <li>🛜 Wi-Fi</li>
+                        <li>🅿️ Parking</li>
+                        <li>❄️ AC</li>
+                        <li>🍳 Kitchen</li>
+                        <li>📺 TV</li>
+                        <li>🧺 Laundry</li>
+                        <li>🔒 Security</li>
+                        <li>🌿 Garden</li>
+                    </ul>
+                </div>
+
+                <hr class="details-divider">
+
+                <div class="details-actions">
+                    <button class="btn-book">Book Now</button>
+
+                    <div>
+                        <%- include('../partials/favoutite') %>
+                    </div>
+                    
+                    <a href="/home" class="btn-back">← Back to Listings</a>
+                </div>
+            </div>
+        </div>
+        <% } else { %>
+        <div style="text-align: center; margin-top: 60px;">
+            <h2 style="color: #555;">Home not found</h2>
+            <p style="color: #888;">The home you are looking for does not exist.</p>
+            <a href="/home" class="btn-back" style="display: inline-block; margin-top: 15px;">← Back to Listings</a>
+        </div>
+        <% } %>
+    </main>
+</body>
+</html>

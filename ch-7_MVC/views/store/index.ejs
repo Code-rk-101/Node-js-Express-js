@@ -1,0 +1,33 @@
+<%- include('../partials/head') %>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <br>
+    <h1> Welcome to Index page</h1>
+
+    <main>
+        <div style="display: flex;">
+            
+            <% registeredHome.forEach((home)=> { %>
+                <!-- <%= home.HouseName %> -->
+                <div style="width: 400px; height: 500px; margin: 50px;">
+                    <div style=" display: flex; align-items: center; justify-content: center;flex-wrap: wrap; background: #f3ece0;padding: 10px;border-radius: 10px;">
+                        <div class="house-card">
+                            <img src="<%= home.photoUrl %>" alt="house img" style="width: 100%;max-width: 400px;height: 100%; border-radius: 8px; " />
+                            <h2><%= home.HouseName %></h2>
+                            <p>Price: Rs-<%= home.price %>/mo</p>
+                            <p>Location: <%= home.location %></p>
+                            <p>Rating: <%= home.rating %></p>
+                            <button>Book</button>
+                        </div>
+                    </div>
+                </div>
+                 
+            <% }) %>
+        </div>
+            
+            
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<%- include('../partials/head') %>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <br>
+    <h1> Here are your Favourite home</h1>
+
+    <main>
+        <div style="display: flex;">
+            
+            <% registeredHome.forEach((home)=> { %>
+                <!-- <%= home.HouseName %> -->
+                <div style="width: 400px; height: 500px; margin: 50px;">
+                    <div style=" display: flex; align-items: center; justify-content: center;flex-wrap: wrap; background: #f3ece0;padding: 10px;border-radius: 10px;">
+                        <div class="house-card">
+                            <img src="<%= home.photoUrl %>" alt="house img" style="width: 100%;max-width: 400px;height: 100%; border-radius: 8px; " />
+                            <h2><%= home.HouseName %></h2>
+                            <p>Price: Rs-<%= home.price %>/mo</p>
+                            <p>Location: <%= home.location %></p>
+                            <p>Rating: <%= home.rating %></p>
+                            <button
+                            style="
+                                background-color:rgb(66, 158, 69);
+                                color: white;
+                                padding: 8px 16px;
+                                border: none;
+                                border-radius: 6px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease, transform 0.2s ease">Book</button>
+                        </div>
+                    </div>
+                </div>
+                 
+            <% }) %>
+        </div>
+            
+            
+        
+    </main>
+</body>
+</html>

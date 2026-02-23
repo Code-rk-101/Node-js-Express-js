@@ -1,0 +1,82 @@
+[
+  {
+    "HouseName": "Maple Creek Cottage",
+    "price": "12000",
+    "location": "Jaipur",
+    "rating": "4.8",
+    "photoUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80",
+    "id": "0.4517283901654321"
+  },
+  {
+    "HouseName": "Sunrise Villa",
+    "price": "15500",
+    "location": "Mumbai",
+    "rating": "4.5",
+    "photoUrl": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80",
+    "id": "0.7734219856012345"
+  },
+  {
+    "HouseName": "Green Meadows",
+    "price": "8500",
+    "location": "Bangalore",
+    "rating": "3.9",
+    "photoUrl": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
+    "id": "0.1298374650987654"
+  },
+  {
+    "HouseName": "Royal Heritage Home",
+    "price": "22000",
+    "location": "Udaipur",
+    "rating": "4.9",
+    "photoUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
+    "id": "0.5561847239012345"
+  },
+  {
+    "HouseName": "Lake View Apartment",
+    "price": "11000",
+    "location": "Pune",
+    "rating": "4.2",
+    "photoUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    "id": "0.9983456712098765"
+  },
+  {
+    "HouseName": "Mountain Retreat",
+    "price": "18000",
+    "location": "Shimla",
+    "rating": "4.7",
+    "photoUrl": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=600&q=80",
+    "id": "0.3345678901234567"
+  },
+  {
+    "HouseName": "Coastal Paradise",
+    "price": "20000",
+    "location": "Goa",
+    "rating": "4.6",
+    "photoUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
+    "id": "0.2216789012345678"
+  },
+  {
+    "HouseName": "Garden Bungalow",
+    "price": "13500",
+    "location": "Chandigarh",
+    "rating": "4.3",
+    "photoUrl": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=80",
+    "id": "0.6678901234567890"
+  },
+  {
+    "HouseName": "Heritage Haveli",
+    "price": "25000",
+    "location": "Jodhpur",
+    "rating": "5",
+    "photoUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80",
+    "id": "0.4489012345678901"
+  },
+  {
+    "HouseName": "Riverside Cottage",
+    "price": "10500",
+    "location": "Rishikesh",
+    "rating": "4.1",
+    "photoUrl": "https://images.unsplash.com/photo-1598228723793-52759bba239c?w=600&q=80",
+    "id": "0.5590123456789012"
+  }
+]

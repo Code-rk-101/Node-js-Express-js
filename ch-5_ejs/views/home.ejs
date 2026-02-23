@@ -1,0 +1,18 @@
+<%- include('../partials/head') %>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+
+    <main>
+        <br>
+        <h1> Here are your registerd home</h1>
+
+        <ul>
+            <% registeredHome.forEach((home)=> { %>
+                <li><%= home %></li>
+            <% }) %>
+            
+        </ul>
+    </main>
+</body>
+</html>
