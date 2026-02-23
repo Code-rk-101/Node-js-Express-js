@@ -1,0 +1,12 @@
+<% if(typeof errors !== 'undefined' && 
+errors && errors.length > 0) { %>
+    <div style="background: #fff0f0; border: 1px solid #ffcdd2; border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; text-align: left;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <% errors.forEach(function(err) { %>
+            <li style="color: #d32f2f; font-size: 0.85rem; padding: 4px 0; display: flex; align-items: center; gap: 6px;">
+                <span style="flex-shrink: 0;">&#9888;</span> <%= err %>
+            </li>
+            <% }); %>
+        </ul>
+    </div>
+<% } %>

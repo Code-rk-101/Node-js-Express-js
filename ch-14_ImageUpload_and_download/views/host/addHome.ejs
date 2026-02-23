@@ -1,0 +1,38 @@
+ <%- include('../partials/head') %>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+        
+    <main>
+    
+        <form  action="/host/<%= editing ? 'edit_home': 'add-home' %>" method="POST" class="house-form" enctype="multipart/form-data" >
+            <h1> <%= editing? "Edit": "Register" %> your home</h1>
+            
+            <input type="hidden" name="id" value="<%= editing? home._id: '' %>">
+            <label for="HouseName">House Name</label>
+            <input value="<%= editing? home.HouseName: '' %>" type="text" id="HouseName" name="HouseName" placeholder="Enter house name"  required>
+
+            <label for="price">Price (Rs/month)</label>
+            <input type="number" id="price" name="price" placeholder="1200" value="<%= editing? home.price: '' %>" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Austin, TX" value="<%= editing? home.location: '' %>" required>
+
+            <label for="rating">Rating</label>
+            <input type="number" step="0.1" id="rating" name="rating" placeholder="4.8" value="<%= editing? home.rating: '' %>" required>
+
+            <label for="image">Add Image</label>
+            <input type="file" accept="image/jpg ,image/png, image/jpeg" id="image" name="image" <%= editing ? '': 'required' %>>
+
+            <label for="rules">Add Rules</label>
+            <input type="file" accept="application/pdf" id="rules" name="rules" <%= editing ? '': 'required' %>>
+
+            <label for="description">Description</label>
+            <textarea
+            id="description" name="description" placeholder="description" required><%= editing? home.description: '' %></textarea>
+            <br>
+            <button type="submit"><%= editing ? "Update House": "Add House" %></button>
+        </form>
+    </main>
+</body>
+</html>
