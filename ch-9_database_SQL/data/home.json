@@ -1,0 +1,82 @@
+[
+  {
+    "HouseName": "Maple Creek Cottage",
+    "price": "12000",
+    "location": "Jaipur",
+    "rating": "4.8",
+    "photoUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80",
+    "description": "A charming cottage nestled near a peaceful creek, featuring traditional Rajasthani architecture with modern amenities, a private garden, and easy access to the Pink City's attractions."
+  },
+  {
+    "HouseName": "Sunrise Villa",
+    "price": "15500",
+    "location": "Mumbai",
+    "rating": "4.5",
+    "photoUrl": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80",
+    "description": "A spacious sea-facing villa with stunning sunrise views, fully furnished interiors, a rooftop terrace, and close proximity to local markets and the Western Express Highway."
+  },
+  {
+    "HouseName": "Green Meadows",
+    "price": "8500",
+    "location": "Bangalore",
+    "rating": "3.9",
+    "photoUrl": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
+    "description": "An affordable home surrounded by lush greenery in a quiet Bangalore suburb. Features 2 bedrooms, a cozy balcony, and is well-connected to IT parks and shopping centres."
+  },
+  {
+    "HouseName": "Royal Heritage Home",
+    "price": "22000",
+    "location": "Udaipur",
+    "rating": "4.9",
+    "photoUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
+    "description": "A luxurious heritage property overlooking Lake Pichola, blending royal Mewar aesthetics with contemporary comforts. Includes a courtyard, ornate interiors, and dedicated parking."
+  },
+  {
+    "HouseName": "Lake View Apartment",
+    "price": "11000",
+    "location": "Pune",
+    "rating": "4.2",
+    "photoUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    "description": "A modern apartment with panoramic lake views, open-plan living, a well-equipped kitchen, and access to a clubhouse, gym, and swimming pool within the gated community."
+  },
+  {
+    "HouseName": "Mountain Retreat",
+    "price": "18000",
+    "location": "Shimla",
+    "rating": "4.7",
+    "photoUrl": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=600&q=80",
+    "description": "A cozy mountain retreat with breathtaking Himalayan views, a wooden-deck balcony, fireplace, and pine-forest surroundings — perfect for those seeking peace and fresh mountain air."
+  },
+  {
+    "HouseName": "Coastal Paradise",
+    "price": "20000",
+    "location": "Goa",
+    "rating": "4.6",
+    "photoUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
+    "description": "A beachside paradise just minutes from the shore, featuring an open terrace, tropical garden, hammock lounge, and vibrant Goan-style interiors with all modern facilities."
+  },
+  {
+    "HouseName": "Garden Bungalow",
+    "price": "13500",
+    "location": "Chandigarh",
+    "rating": "4.3",
+    "photoUrl": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=80",
+    "description": "A spacious bungalow with a beautiful private garden, 3 bedrooms, a sunlit veranda, and located in one of Chandigarh's well-planned sectors close to parks and markets."
+  },
+  {
+    "HouseName": "Heritage Haveli",
+    "price": "25000",
+    "location": "Jodhpur",
+    "rating": "5",
+    "photoUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80",
+    "description": "A stunning Blue City haveli with intricate stone carvings, a grand courtyard, rooftop dining area with fort views, and interiors that celebrate Rajasthan's rich cultural heritage."
+  },
+  {
+    "HouseName": "Riverside Cottage",
+    "price": "10500",
+    "location": "Rishikesh",
+    "rating": "4.1",
+    "photoUrl": "https://images.unsplash.com/photo-1598228723793-52759bba239c?w=600&q=80",
+    "description": "A serene riverside cottage along the Ganges, ideal for yoga and nature lovers. Features a sit-out porch, minimalist interiors, and the soothing sound of the river all day long."
+  }
+]

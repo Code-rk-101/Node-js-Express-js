@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 0.5rem 1rem;
+    }
+
+    /* Logo */
+    .navbar .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Nav links */
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
+    main
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .house-form {
+      width: 400px;
+      padding: 20px;
+      padding-right: 35px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+      margin: 20px;
+    }
+
+    .house-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .house-form input,
+    .house-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 80px;
+      box-sizing: border-box;
+    }
+
+    .house-form input {
+      min-height: auto;
+      resize: none;
+    }
+
+    .house-form button {
+      background: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .house-form button:hover {
+      background: #ff9800;
+    }
+
+    .btn-favourite {
+        background-color: rgb(30, 115, 134); color: white;
+        padding: 12px 28px; border: none; border-radius: 6px;
+        font-size: 15px; font-weight: 600; cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-decoration: none;
+    }
+    .btn-favourite:hover { background-color: rgb(22, 90, 105); transform: translateY(-1px); }
+  </style>
+
